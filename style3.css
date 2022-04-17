@@ -1,0 +1,55 @@
+form {
+    display: grid;
+    width: 400px;
+    grid-template-columns: 20% 50%;
+    align-items: row;
+    grid-gap: 2em;
+
+}
+
+header {
+    background-color: rgb(233, 61, 156);
+    color:black;
+    Padding: 10px;
+    grid-area: header;
+    font-size: 250%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+nav{
+    background-color:lightblue;
+    grid-area: nav;
+
+}
+
+main{
+    background-color: lightpink;
+    color:black;
+    grid-area: main;
+    font-size: 170%;
+
+
+}
+
+aside{
+    background-color:lightblue;
+    grid-area: aside;
+
+}
+
+footer{
+    background-color:lightpink;
+    grid-area: footer;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 20% 60% 20;
+    grid-template-rows: auto;
+    grid-template-areas:  "nav nav nav"
+                          "header header header"
+                          "main main main"
+                          "aside aside aside"
+                          "footer footer footer"
+                    ;
+}
